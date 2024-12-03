@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/topnav.js"></script>
+    <script src="js/script.js"></script>
+    <title>Aula-11</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><!--Logo-->
+            <div id="cabecalho">
+                <div id="plano-fundo"></div>
+                  <center><img src="img/crossTech.png" alt="Logo" style="width: 30%; height: 30%;"></center>
+              </div>
+        </div>
+        <div class="navbar" id="navbar"><!--Nav-bar e topnav-->
+            <div class="topnav" id="topnav">
+                <a href="index.html">Home</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="equipe.html">Equipe</a>
+                <a href="fale-conosco.html" class="active">Contato</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </div>
+        <div class="content">
+            
+        </div>
+        <div class="footer"><!--Rodapé-->
+            <center><p style="text-align: center;">CrossTech 2023 - Todos os Direitos Reservados</p></center>
+        </div>
+        <div class="botao" id="botao" onclick="backtoTop();">
+            <button style="border: none;border-radius: 100%;background-color: transparent;transition: 0.3s;display: none;" id="btnTop"><img src="img/seta.png" style="width: 20px;"></button>
+        </div>
+    </div>
+
+    <script>
+        window.onscroll = function(){
+            scroll();
+        }
+        function scroll(){
+            var btn = document.getElementById("btnTop");
+            if(document.documentElement.scrollTop > 200){
+                btn.style.display = "block";
+            }else{
+                btn.style.display = "none";
+            }
+        }
+        function backtoTop(){
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

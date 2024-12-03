@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/topnav.js"></script>
+    <script src="js/script.js"></script>
+    <title>Aula-11</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><!--Logo-->
+            <div id="cabecalho">
+                <div id="plano-fundo"></div>
+                  <center><img src="img/crossTech.png" alt="Logo" style="width: 30%; height: 30%;"></center>
+              </div>
+        </div>
+        <div class="navbar" id="navbar"><!--Nav-bar e topnav-->
+            <div class="topnav" id="topnav">
+                <a href="index.html">Home</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="equipe.html" class="active">Equipe</a>
+                <a href="fale-conosco.html">Contato</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </div>
+        <div class="content">
+            <div class="linha1">
+                <div class="coluna1">
+                    <div class="me-col3">
+                        <img src="img/usuario.png" style="width: 65%;height: 65%;">
+                    </div>
+                    <div class="me-col3">
+                        <p>Nome: Rodolfo<br>
+                            Ocupação: Programador<br>
+                            Obs: Ninguém conhece seu rosto, sempre trabalha de casa, só se sabe do trabalho dele.
+                        </p>
+                    </div>
+                    <div class="me-col3">
+                        <img src="img/secretaria.png" style="width: 65%; height: 65%;border-radius: 10px;">
+                    </div>
+                    <div class="me-col3">
+                        <p>Nome: Amanda<br>
+                            Profissão: Secretária<br>
+                            Obs: Alegre e sempre atenciosa com o clientes.
+                        </p>
+                    </div>
+                    <div class="me-col3">
+                        <img src="img/Cafézinho.jpg" style="width: 65%; height: 65%;border-radius: 10px;">
+                    </div>
+                    <div class="me-col3">
+                        <p>Nome: Gersão<br>
+                            Profissão: Estagiário<br>
+                            Obs: Cara do Cafézinho.
+                        </p>
+                    </div>
+                </div>
+                <div class="coluna1">
+                    <div class="me-col3">
+                        <img src="img/designer (2).png" style="width: 65%; height: 65%;border-radius: 10px;">
+                    </div>
+                    <div class="me-col3">
+                        <p>Nome: Thiago<br>
+                            Ocupação: Designer<br>
+                            Obs: Adora sua área de trabalho, sempre alegre e motiva a equipe.
+                        </p>
+                    </div>
+                    <div class="me-col3">
+                        <img src="img/Supervisor.jpeg" style="width: 65%; height: 65%;border-radius: 10px;">
+                    </div>
+                    <div class="me-col3">
+                        <p>Nome: Reǵios<br>
+                            Profissão: Supervisor<br>
+                            Obs: O NPC mais foda já visto.
+                        </p>
+                    </div>
+                    <div class="me-col3">
+                        <img src="img/Fabian-Viegas-2.jpg" style="width: 65%; height: 65%;border-radius: 10px;">
+                    </div>
+                    <div class="me-col3">
+                        <p>Nome: Fabiano<br>
+                            Profissão: Supervisor da cibersegurança<br>
+                            Obs: O cara já fez mais de 8763587342 faculdades e ainda é foda em cibersegurança.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer"><!--Rodapé-->
+            <center><p style="text-align: center;">CrossTech 2023 - Todos os Direitos Reservados</p></center>
+        </div>
+        <div class="botao" id="botao" onclick="backtoTop();">
+            <button style="border: none;border-radius: 100%;background-color: transparent;transition: 0.3s;display: none;" id="btnTop"><img src="img/seta.png" style="width: 20px;"></button>
+        </div>
+    </div>
+
+    <script>
+        window.onscroll = function(){
+            scroll();
+        }
+        function scroll(){
+            var btn = document.getElementById("btnTop");
+            if(document.documentElement.scrollTop > 200){
+                btn.style.display = "block";
+            }else{
+                btn.style.display = "none";
+            }
+        }
+        function backtoTop(){
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

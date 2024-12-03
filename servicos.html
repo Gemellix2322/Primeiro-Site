@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/topnav.js"></script>
+    <script src="js/script.js"></script>
+    <title>Aula-11</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><!--Logo-->
+            <div id="cabecalho">
+                <div id="plano-fundo"></div>
+                  <center><img src="img/crossTech.png" alt="Logo" style="width: 30%; height: 30%;"></center>
+              </div>
+        </div>
+        <div class="navbar" id="navbar"><!--Nav-bar e topnav-->
+            <div class="topnav" id="topnav">
+                <a href="index.html">Home</a>
+                <a href="servicos.html" class="active">Serviços</a>
+                <a href="equipe.html">Equipe</a>
+                <a href="fale-conosco.html">Contato</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </div>
+        <div class="content">
+            <div class="linha1">
+                <div class="coluna1"><!--Coluna para texto sobre os serviços-->
+                    <p style="font-size: 20px; padding-left: 15px; padding-right: 5px; "><b>
+                        <br><br>&emsp;Nossos principais serviços<br>
+                    </b></p>
+                    <p style="font-size: 20px; padding-left: 15px; padding-right: 5px;">
+                        - Otimização de Motores de Busca (SEO): Melhoramos a visibilidade do seu website nos resultados de pesquisa orgânica, aumentando a classificação nos motores de busca e direcionando tráfego qualificado;<br><br>
+                        - Marketing de Mídias Sociais: Desenvolvemos estratégias personalizadas para maximizar o potencial das plataformas sociais, engajando seu público-alvo, criando conteúdo cativante e gerenciando campanhas de publicidade social;<br><br>
+                        - Publicidade Online (PPC): Criamos campanhas personalizadas em plataformas como Google Ads e redes sociais, utilizando estratégias avançadas de segmentação e seleção de palavras-chave relevantes para alcançar o máximo ROI;<br><br>
+                        - Marketing de Conteúdo: Criamos conteúdo relevante e envolvente para seu website e outros canais digitais, ajudando a estabelecer sua autoridade no setor e construir relacionamentos duradouros com seu público;<br><br>
+                        - Design e Desenvolvimento de Websites: Criamos websites profissionais, responsivos e intuitivos, refletindo sua marca e oferecendo uma experiência excepcional aos visitantes. Garantimos que seu site seja rápido, seguro e alinhado com as últimas tendências de design web.<br><br>
+                    </p>
+                    <br><br>
+                    <button style="margin-left: 250px;font-size: 20px;border: black 1px solid;border-radius: 10px;box-shadow: black 5px 5px 5px;background-color: rgb(145, 145, 145);"><a href="orçamento.html">Solicitar orçamento</a></button>
+                </div>
+                <div class="coluna2"><!--Coluna da avaliações dos clientes-->
+                    <br> <br>
+                    <p style="text-align: center; justify-content: center; font-size: 18px;">Abaixo estão alguns dos nossos clientes que se sentiram satisfeitos com nossa Empresa:</p>
+                    <br> <br>
+                    <div class="box"><!--Caixa de resposta do cliente-->
+                        <div class="me-col1">
+                            <center><img src="img/usuario.png" style="width: 75%; height: 75%;"></center>
+                            <p style="text-align: center;margin: 0">Hering</p>
+                        </div>
+                        <div class="me-col2">
+                            <center><p class="box-p-size">Estou extremamente satisfeito com a empresa de marketing digital. Sua estratégia personalizada impulsionou minhas vendas, sua equipe é competente e dedicada, e o retorno sobre o investimento foi surpreendente. Recomendo seus serviços para quem busca resultados reais e deseja levar seu negócio ao próximo nível.</p></center>
+                        </div>
+                    </div>
+                    <br> <br>
+                    <div class="box"><!--Caixa de resposta do cliente-->
+                        <div class="me-col1">
+                            <center><img src="img/usuario.png" style="width: 75%; height: 75%;"></center>
+                            <p style="text-align: center;margin: 0">Hoyoverse</p>
+                        </div>
+                        <div class="me-col2">
+                            <center><p class="box-p-size">A empresa de marketing digital superou todas as minhas expectativas. Sua estratégia eficiente impulsionou meu negócio, sua equipe comprometida garantiu resultados impressionantes e o retorno sobre o investimento foi excepcional. Eu os recomendo sem hesitação para quem busca um impulso significativo em suas iniciativas de marketing.</p></center>
+                        </div>
+                    </div>
+                    <br> <br>
+                    <div class="box"><!--Caixa de resposta do cliente-->
+                        <div class="me-col1">
+                            <center><img src="img/usuario.png" style="width: 75%; height: 75%;"></center>
+                            <p style="text-align: center;margin: 0;">Guselect</p>
+                        </div>
+                        <div class="me-col2">
+                            <center><p class="box-p-size">A empresa de marketing digital foi a escolha perfeita para impulsionar meu negócio. Sua estratégia personalizada, equipe altamente competente e resultados impressionantes proporcionaram um retorno sobre o investimento excepcional. Recomendo seus serviços a todos que desejam alcançar sucesso no mundo digital.</p></center>
+                        </div>
+                    </div>
+                    <br> <br>
+                </div>
+            </div>
+        </div>
+        <div class="footer"><!--Rodapé-->
+            <center><p style="text-align: center;">CrossTech 2023 - Todos os Direitos Reservados</p></center>
+        </div>
+        <div class="botao" id="botao" onclick="backtoTop();">
+            <button style="border: none;border-radius: 100%;background-color: transparent;transition: 0.3s;display: none;" id="btnTop"><img src="img/seta.png" style="width: 20px;"></button>
+        </div>
+    </div>
+
+    <script>
+        window.onscroll = function(){
+            scroll();
+        }
+        function scroll(){
+            var btn = document.getElementById("btnTop");
+            if(document.documentElement.scrollTop > 200){
+                btn.style.display = "block";
+            }else{
+                btn.style.display = "none";
+            }
+        }
+        function backtoTop(){
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

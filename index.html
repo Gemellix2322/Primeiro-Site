@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/topnav.js"></script>
+    <script src="js/script.js"></script>
+    <title>Aula-11</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><!--Logo-->
+            <center><img src="img/crossTech.png" alt="Logo" style="width: 30%; height: 30%;"></center>
+        </div>
+        <div class="navbar" id="navbar"><!--Nav-bar e topnav-->
+            <div class="topnav" id="topnav">
+                <a href="index.html" class="active" >Home</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="equipe.html">Equipe</a>
+                <a href="fale-conosco.html">Contato</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </div>
+        <div class="content">
+            <div class="subtitulo">
+                <h2 style="font-weight: 400;">Sobre a Empresa</h2>
+            </div>
+            <div class="linha1">
+                <div class="coluna1"><!--Coluna para texto sobre a empresa-->
+                    <p style="font-size: 20px; padding-left: 15px; padding-right: 5px;"><br><br>&emsp;A Cross Tech é uma agência inovadora de marketing digital que se dedica a ajudar empresas a alcançarem o sucesso online.
+                        Nossa equipe especializada está sempre atualizada com as últimas tendências e tecnologias do setor, garantindo que nossos clientes recebam soluções eficazes e personalizadas.</p>
+                    <p style="font-size: 20px; padding-left: 15px; padding-right: 5px;">Nossos Serviços:<br><br>
+
+                        - Desenvolvimento de Estratégia Digital;<br>
+                        - Otimização de Motores de Busca (SEO);<br>
+                        - Marketing de Mídias Sociais;<br>
+                        - Publicidade Online (PPC);<br>
+                        - Marketing de Conteúdo;<br>
+                        - Design e Desenvolvimento de Websites.<br>
+                    </p>
+                    <p style="font-size: 20px; padding-left: 15px; padding-right: 5px;">&emsp;Na Cross Tech, estamos empenhados em impulsionar o crescimento e o sucesso dos nossos clientes por meio de soluções de marketing digital estratégicas e inovadoras. 
+                        Nossa paixão pelo que fazemos nos permite entregar resultados excepcionais e criar parcerias duradouras.</p>
+                    <br>
+                    <br>
+                    <p style="text-align: center; justify-content: center; font-size: 20px;">Abaixo está nosso contato</p>
+                    <br> <br>
+                    <center><button class="button"><a href="https://api.whatsapp.com/send?phone=5551995284870"><img src="img/2.png" style="width: 45%; height: 45%;"></a></button></center>
+                    <br> <br>
+                </div>
+                <div class="coluna2">
+                    <br> <br> <br> <br>
+                    <div class="col-1">
+                        <img src="img/logo hering.png" style="width: 75%;height: 75%;">
+                    </div>
+                    <div class="col-2">
+                        <img src="img/logo hoyoverse.png" style="width: 75%;height: 75%;">
+                    </div>
+                    <br>
+                    <p style="font-size: 20px; padding-left: 15px; padding-right: 5px;">Essas são alguns de nossos clientes que nós temos, desde, moda, como a Hering, até jogos, como a Hoyoverse, portanto vale dizer que a nossa empresa tem um amplo leque de tipos de empresas. 
+                    </p>
+                </div>
+            </div>
+            <img src="img/cat.png" style="float: left; width: 20%; height: 20%; position: relative;top: 65px;">
+        </div>
+        <div class="botao" id="botao" onclick="backtoTop();">
+            <button style="border: none;border-radius: 100%;background-color: transparent;transition: 0.3s;display: none;" id="btnTop"><img src="img/seta.png" style="width: 20px;border-radius: 100%;"></button>
+        </div>
+        <div class="footer"><!--Rodapé-->
+            <center><p style="text-align: center;">CrossTech 2023 - Todos os Direitos Reservados</p></center>
+        </div>
+    </div>
+
+    <script>
+        window.onscroll = function(){
+            scroll();
+        }
+        function scroll(){
+            var btn = document.getElementById("btnTop");
+            if(document.documentElement.scrollTop > 200){
+                btn.style.display = "block";
+            }else{
+                btn.style.display = "none";
+            }
+        }
+        function backtoTop(){
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

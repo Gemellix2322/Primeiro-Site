@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/topnav.js"></script>
+    <script src="js/script.js"></script>
+    <title>Aula-11</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><!--Logo-->
+            <center><img src="img/crossTech.png" alt="Logo" style="width: 30%; height: 30%;"></centeer>
+        </div>
+        <div class="navbar" id="navbar"><!--Nav-bar e topnav-->
+            <div class="topnav" id="topnav">
+                <a href="index.html">Home</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="equipe.html">Equipe</a>
+                <a href="contato.html" class="active">Contato</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </div>
+        <div class="content">
+            <div class="linha1">
+                <div class="coluna1">
+                    <h2 style="justify-content: center;">Onde você pode nos encontrar?</h2>
+                    <div class="apresentacão">
+                        <div class="me-col4">
+                            <p style="justify-content: center;">Rua Pastor Ernesto Schlieper<br>Num: 200<br>Bairro: Sete de Setembro<br>Cidade: Ivoti<br>Estado: RS<br>CEP: 93900-000</p>
+                        </div>
+                        <div class="me-col4">
+                            <iframe style="width: 250px;height: 250px;"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13875.443357425911!2d-51.1613204!3d-29.6077314!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519453f0ed7c1f1%3A0xc85cbcfcd6417b48!2sInstituto%20Ivoti!5e0!3m2!1spt-BR!2sbr!4v1691791576542!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    
+                    <br><br>
+                    <div class="me-col4">
+                        <h2>Horário de atendimento</h2>
+                    <p style="margin: 0;">Aberto de Seg á Sex<br> Das 7:00 às 11:30 das 13:00 às 17:00</p>
+                    </div>
+                </div>
+                <div class="coluna1">
+                    <h2 style="font-size: 23px;">Quer se juntar a equipe ou tem algum comentário? Envie-nos!</h2>
+                    <div class="contorno">
+                        <form class="form" style="margin: 3px;">
+                            <label>Name</label><br><br>
+                            <input type="text" style="width: 200px;"><br><br>
+                            <label>E-mail</label><br><br>
+                            <input type="text" style="width: 200px;"><br><br>
+                            <label>Mensagem</label>
+                            <textarea style="height: 70px;width: 200px;"></textarea>
+                            <input type="submit">
+                            <input type="reset">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer"><!--Rodapé-->
+            <center><p style="text-align: center;">CrossTech 2023 - Todos os Direitos Reservados</p></center>
+        </div>
+        <div class="botao" id="botao" onclick="backtoTop();">
+            <button style="border: none;border-radius: 100%;background-color: transparent;transition: 0.3s;display: none;" id="btnTop"><img src="img/seta.png" style="width: 20px;"></button>
+        </div>
+    </div>
+
+    <script>
+        window.onscroll = function(){
+            scroll();
+        }
+        function scroll(){
+            var btn = document.getElementById("btnTop");
+            if(document.documentElement.scrollTop > 200){
+                btn.style.display = "block";
+            }else{
+                btn.style.display = "none";
+            }
+        }
+        function backtoTop(){
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
